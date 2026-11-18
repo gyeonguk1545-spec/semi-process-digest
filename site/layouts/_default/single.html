@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="post">
+  <header class="post-head">
+    <p class="meta">{{ .Date.Format "2006-01-02" }}{{ with .Params.tags }} · {{ range $i, $t := . }}{{ if $i }} {{ end }}<a class="tag" href="{{ "tags/" | relURL }}{{ $t | urlize }}/">#{{ $t }}</a>{{ end }}{{ end }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.summary }}<p class="lede">{{ . }}</p>{{ end }}
+  </header>
+  {{ if gt (len .TableOfContents) 40 }}
+  <details class="toc"><summary>목차</summary>{{ .TableOfContents }}</details>
+  {{ end }}
+  <div class="content">{{ .Content }}</div>
+  <nav class="pager">
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+  </nav>
+</article>
+{{ end }}

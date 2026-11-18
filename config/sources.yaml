@@ -1,0 +1,68 @@
+# 수집 출처 목록
+# - 모든 URL 은 2026-11-17 에 실제 접속해 피드가 열리는 것을 확인함.
+# - filter: true  → 공정 키워드(taxonomy.yaml)에 하나라도 걸린 글만 저장 (범용 매체용)
+#   filter: false → 전부 저장 (반도체 전문 매체용). 태그가 없으면 "미분류"
+# - 출처를 끄려면 enabled: false
+# 확인했지만 뺀 것: 전자신문 섹션 RSS(주제가 너무 넓음), Lam/AMAT 뉴스룸(피드 비어 있음), TSMC(피드 없음)
+
+rss:
+  - name: 디일렉-반도체
+    url: https://www.thelec.kr/rss/S1N2.xml
+    lang: ko
+    filter: false
+  - name: 디일렉-소재장비
+    url: https://www.thelec.kr/rss/S1N3.xml
+    lang: ko
+    filter: true
+  - name: SK하이닉스 뉴스룸
+    url: https://news.skhynix.co.kr/feed/
+    lang: ko
+    filter: true
+  - name: 삼성전자 뉴스룸
+    url: https://news.samsung.com/kr/feed
+    lang: ko
+    filter: true
+  - name: Semiconductor Engineering
+    url: https://semiengineering.com/feed/
+    lang: en
+    filter: false
+  - name: IEEE Spectrum (Semiconductors)
+    url: https://spectrum.ieee.org/feeds/topic/semiconductors.rss
+    lang: en
+    filter: true
+  - name: EE Times
+    url: https://www.eetimes.com/feed/
+    lang: en
+    filter: true
+
+# Google 뉴스 검색 RSS — 여러 언론사를 한 번에 훑는 용도. 너무 자주 부르면 429(요청 과다)가 날 수 있음.
+google_news:
+  - { query: "반도체 공정", lang: ko }
+  - { query: "HBM 하이브리드 본딩", lang: ko }
+  - { query: "EUV 노광", lang: ko }
+  - { query: "High-NA EUV", lang: en }
+  - { query: "hybrid bonding semiconductor", lang: en }
+  - { query: "backside power delivery", lang: en }
+
+# arXiv 논문 검색 (최신 제출순). 문법: https://info.arxiv.org/help/api/user-manual.html
+arxiv:
+  max_results: 25
+  queries:
+    - name: ALD/ALE
+      q: 'abs:"atomic layer deposition" OR abs:"atomic layer etching"'
+    - name: EUV 리소그래피
+      q: 'abs:"extreme ultraviolet" AND abs:lithography'
+    - name: 하이브리드 본딩·패키징
+      q: 'abs:"hybrid bonding" OR abs:"advanced packaging"'
+    - name: GAA·CFET
+      q: 'abs:"gate-all-around" OR abs:"complementary FET" OR abs:CFET'
+    - name: 메모리 공정
+      q: 'abs:"3D NAND" OR (abs:DRAM AND abs:fabrication)'
+    - name: 내 연구 연결 (CNT 전계방출·전자빔)
+      q: 'abs:"field emission" AND (abs:"carbon nanotube" OR abs:"electron beam")'
+
+settings:
+  max_age_days: 30        # 이보다 오래된 글은 버림
+  request_timeout: 20
+  arxiv_delay_sec: 3      # arXiv 권장: 요청 사이 3초
+  google_delay_sec: 3     # Google 뉴스 429(요청 과다) 방지

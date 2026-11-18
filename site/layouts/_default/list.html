@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1 class="list-title">{{ .Title }}</h1>
+{{ if eq .Kind "taxonomy" }}
+  <ul class="tag-cloud">
+  {{ range .Data.Terms.ByCount }}<li><a class="tag" href="{{ .Page.RelPermalink }}">#{{ .Page.Title }} <span>{{ .Count }}</span></a></li>{{ end }}
+  </ul>
+{{ else }}
+  {{ partial "post-list.html" .Pages.ByDate.Reverse }}
+{{ end }}
+{{ end }}

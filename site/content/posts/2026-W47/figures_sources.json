@@ -1,0 +1,32 @@
+{
+ "cmp_tool.jpg": {
+  "title": "File:Chemical-mechanical polishing (CMP-108, conditioner).jpg",
+  "artist": "cpxmn",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Chemical-mechanical_polishing_(CMP-108,_conditioner).jpg",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Chemical-mechanical_polishing_%28CMP-108%2C_conditioner%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "desc": "Pad conditioner (Chiaping model 108) for the chemical-mechanical polishing (CMP), which removes material from uneven topography on a wafer surface until a flat surface is created.",
+  "downloaded": true
+ },
+ "euv_tool.jpg": {
+  "title": "File:Extreme ultraviolet lithography tool.jpg",
+  "artist": "Lawrence Livermore National Laboratory",
+  "license": "Public domain",
+  "license_url": null,
+  "page": "https://commons.wikimedia.org/wiki/File:Extreme_ultraviolet_lithography_tool.jpg",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/36/Extreme_ultraviolet_lithography_tool.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "desc": "EUVL tool, that deposits virtually defect-free, ultra-thin films on integrated circuits.",
+  "downloaded": true
+ },
+ "euv_resist_blur.png": {
+  "title": "File:80 eV electron blur in EUV Resist.png",
+  "artist": "Guiding light",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:80_eV_electron_blur_in_EUV_Resist.png",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/ac/80_eV_electron_blur_in_EUV_Resist.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "desc": "The exposure of a leading EUV chemically amplified resist by an 80 eV flood electron beam can lead to resist thickness loss up to ~7.5 nm. The 80 eV represents typical EUV photoelectron energy, so resist dimensions requiring control to within ~15 nm would be affected. Ref.: Y. Kandel et al., Proc. S",
+  "downloaded": false
+ }
+}

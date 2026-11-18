@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="880" height="340" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="880" height="340" fill="#ffffff"/>
+  <defs>
+    <marker id="pa" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,0 L5,10 z" fill="#805ad5"/></marker>
+    <marker id="sa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#999"/></marker>
+  </defs>
+  <g font-size="12.5" fill="#333">
+    <rect x="20" y="300" width="14" height="12" fill="#b0b4ba"/><text x="40" y="311">실리콘</text>
+    <rect x="95" y="300" width="14" height="12" fill="#dfe6ee" stroke="#9aa8b8"/><text x="115" y="311">산화막(SiO₂ 등)</text>
+    <rect x="225" y="300" width="14" height="12" fill="#b87333"/><text x="245" y="311">구리(Cu) 패드</text>
+    <text x="360" y="311" fill="#777">개념도 — 두께·간격·오목한 정도는 과장해서 그림</text>
+  </g>
+
+  <!-- ① CMP -->
+  <g transform="translate(15,0)">
+    <text x="102" y="34" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">① CMP 평탄화</text>
+    <rect x="10" y="200" width="185" height="55" fill="#b0b4ba"/>
+    <rect x="10" y="160" width="185" height="40" fill="#dfe6ee" stroke="#9aa8b8"/>
+    <rect x="40" y="166" width="40" height="34" fill="#b87333"/>
+    <rect x="125" y="166" width="40" height="34" fill="#b87333"/>
+    <text x="102" y="278" font-size="12.5" fill="#444" text-anchor="middle">Cu 패드를 산화막보다</text>
+    <text x="102" y="294" font-size="12.5" fill="#444" text-anchor="middle">살짝 오목하게 (리세스)</text>
+  </g>
+  <line x1="222" y1="200" x2="238" y2="200" stroke="#999" stroke-width="2" marker-end="url(#sa)"/>
+
+  <!-- ② 활성화 -->
+  <g transform="translate(240,0)">
+    <text x="102" y="34" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">② 플라즈마 활성화·세정</text>
+    <g stroke="#805ad5" stroke-width="2">
+      <line x1="40" y1="70" x2="40" y2="140" marker-end="url(#pa)"/><line x1="80" y1="70" x2="80" y2="140" marker-end="url(#pa)"/>
+      <line x1="120" y1="70" x2="120" y2="140" marker-end="url(#pa)"/><line x1="160" y1="70" x2="160" y2="140" marker-end="url(#pa)"/>
+    </g>
+    <rect x="10" y="200" width="185" height="55" fill="#b0b4ba"/>
+    <rect x="10" y="160" width="185" height="40" fill="#dfe6ee" stroke="#9aa8b8"/>
+    <rect x="40" y="166" width="40" height="34" fill="#b87333"/>
+    <rect x="125" y="166" width="40" height="34" fill="#b87333"/>
+    <g font-size="10" fill="#805ad5"><text x="14" y="156">–OH</text><text x="88" y="156">–OH</text><text x="168" y="156">–OH</text></g>
+    <text x="102" y="278" font-size="12.5" fill="#444" text-anchor="middle">표면을 접합되기 쉬운 상태로</text>
+    <text x="102" y="294" font-size="12.5" fill="#9c3b2a" text-anchor="middle">파티클 하나도 공극(void) 원인</text>
+  </g>
+  <line x1="447" y1="200" x2="463" y2="200" stroke="#999" stroke-width="2" marker-end="url(#sa)"/>
+
+  <!-- ③ 상온 접합 -->
+  <g transform="translate(465,0)">
+    <text x="102" y="34" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">③ 정렬 후 상온 접합</text>
+    <rect x="10" y="75" width="185" height="55" fill="#b0b4ba"/>
+    <rect x="10" y="130" width="185" height="40" fill="#dfe6ee" stroke="#9aa8b8"/>
+    <rect x="40" y="130" width="40" height="34" fill="#b87333"/>
+    <rect x="125" y="130" width="40" height="34" fill="#b87333"/>
+    <rect x="10" y="170" width="185" height="40" fill="#dfe6ee" stroke="#9aa8b8"/>
+    <rect x="40" y="176" width="40" height="34" fill="#b87333"/>
+    <rect x="125" y="176" width="40" height="34" fill="#b87333"/>
+    <rect x="10" y="210" width="185" height="45" fill="#b0b4ba"/>
+    <line x1="10" y1="170" x2="195" y2="170" stroke="#2b6cb0" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="102" y="278" font-size="12.5" fill="#444" text-anchor="middle">산화막끼리 먼저 붙음</text>
+    <text x="102" y="294" font-size="12.5" fill="#444" text-anchor="middle">Cu 사이에는 아직 틈</text>
+  </g>
+  <line x1="672" y1="200" x2="688" y2="200" stroke="#999" stroke-width="2" marker-end="url(#sa)"/>
+
+  <!-- ④ 어닐링 -->
+  <g transform="translate(690,0)">
+    <text x="92" y="34" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">④ 어닐링(열처리)</text>
+    <rect x="0" y="75" width="185" height="55" fill="#b0b4ba"/>
+    <rect x="0" y="130" width="185" height="40" fill="#dfe6ee" stroke="#9aa8b8"/>
+    <rect x="0" y="170" width="185" height="40" fill="#dfe6ee" stroke="#9aa8b8"/>
+    <rect x="30" y="130" width="40" height="80" fill="#b87333" stroke="#7a4a1f" stroke-width="2"/>
+    <rect x="115" y="130" width="40" height="80" fill="#b87333" stroke="#7a4a1f" stroke-width="2"/>
+    <rect x="0" y="210" width="185" height="45" fill="#b0b4ba"/>
+    <g stroke="#e53e3e" stroke-width="2" fill="none">
+      <path d="M-2 95 q5 -6 0 -12 q-5 -6 0 -12"/><path d="M187 95 q5 -6 0 -12 q-5 -6 0 -12"/>
+    </g>
+    <text x="92" y="278" font-size="12.5" fill="#444" text-anchor="middle">Cu가 열팽창으로 틈을 메워</text>
+    <text x="92" y="294" font-size="12.5" fill="#444" text-anchor="middle">Cu–Cu 전기 연결 완성</text>
+  </g>
+</svg>

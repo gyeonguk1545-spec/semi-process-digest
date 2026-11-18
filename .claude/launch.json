@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "blog",
+      "runtimeExecutable": "hugo",
+      "runtimeArgs": ["server", "--source", "site", "--port", "1313", "--disableFastRender"],
+      "port": 1313
+    }
+  ]
+}

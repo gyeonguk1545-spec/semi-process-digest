@@ -1,0 +1,117 @@
+:root {
+  --bg: #fbfbf8;
+  --fg: #1f2328;
+  --muted: #5f6670;
+  --line: #e3e3dc;
+  --accent: #2b6cb0;
+  --accent-soft: #e8f0fa;
+  --box: #f3f6f1;
+  --box-line: #7a9a6a;
+  --card: #ffffff;
+  --code: #f1f1ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a;
+    --fg: #e6e6e3;
+    --muted: #a0a6ad;
+    --line: #2c3036;
+    --accent: #7fb0ea;
+    --accent-soft: #1d2a3a;
+    --box: #1b2219;
+    --box-line: #7a9a6a;
+    --card: #1c1f23;
+    --code: #22262b;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 780px; margin: 0 auto; padding: 0 16px; }
+
+/* header / footer */
+.site-header { border-bottom: 1px solid var(--line); background: var(--card); }
+.site-header .wrap { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px; }
+.brand { font-weight: 800; font-size: 1.1rem; color: var(--fg); }
+.site-header nav { display: flex; gap: 16px; font-size: .95rem; }
+.site-header nav a { color: var(--muted); }
+.site-footer { margin-top: 64px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; padding: 24px 0 40px; }
+
+/* home / lists */
+.hero { padding: 28px 0 8px; color: var(--muted); }
+.list-title { margin: 32px 0 16px; }
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li { display: flex; gap: 18px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.post-list h2 { margin: 2px 0 6px; font-size: 1.25rem; line-height: 1.4; }
+.post-list h2 a { color: var(--fg); }
+.post-list p { margin: 4px 0; }
+.thumb { width: 120px; height: 90px; object-fit: cover; border-radius: 8px; background: #fff; border: 1px solid var(--line); flex: none; }
+.meta { color: var(--muted); font-size: .88rem; margin: 0; }
+.tag { display: inline-block; font-size: .82rem; background: var(--accent-soft); color: var(--accent); padding: 1px 8px; border-radius: 999px; margin: 2px 2px 2px 0; }
+.tag-cloud { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-cloud .tag { font-size: .95rem; padding: 4px 12px; }
+.tag-cloud span { opacity: .7; }
+
+/* post */
+.post-head { padding: 32px 0 8px; }
+.post-head h1 { font-size: 1.85rem; line-height: 1.35; margin: 8px 0 12px; }
+.lede { font-size: 1.05rem; color: var(--muted); margin: 0; }
+.toc { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 16px; margin: 20px 0; font-size: .93rem; }
+.toc summary { cursor: pointer; font-weight: 700; }
+.toc ul { padding-left: 18px; margin: 6px 0; }
+.content h2 { font-size: 1.4rem; margin: 48px 0 12px; padding-top: 12px; border-top: 2px solid var(--line); line-height: 1.4; }
+.content h3 { font-size: 1.12rem; margin: 28px 0 8px; }
+.content p, .content li { margin: 8px 0; }
+.content ul, .content ol { padding-left: 22px; }
+.content strong { font-weight: 700; }
+.content code { background: var(--code); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+
+/* "배경 지식" 상자 = 인용문(>) */
+.content blockquote {
+  margin: 18px 0;
+  padding: 12px 16px;
+  background: var(--box);
+  border-left: 4px solid var(--box-line);
+  border-radius: 0 10px 10px 0;
+  font-size: .96rem;
+}
+.content blockquote p:first-child { margin-top: 0; }
+.content blockquote p:last-child { margin-bottom: 0; }
+
+/* 표 */
+.content table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: .93rem; display: block; overflow-x: auto; }
+.content th, .content td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+.content th { background: var(--card); }
+
+/* 그림 */
+.fig { margin: 24px 0; }
+.fig img { display: block; width: 100%; height: auto; background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 8px; }
+.fig.narrow img { max-width: 480px; margin: 0 auto; }
+.fig figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+.fig figcaption strong { color: var(--fg); }
+.fig .src { display: block; font-size: .8rem; }
+.fig .missing { color: #c0392b; }
+
+/* 면접 질문 접기 */
+.content details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin: 10px 0; }
+.content details summary { cursor: pointer; font-weight: 600; }
+
+.pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; font-size: .92rem; }
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .post-head h1 { font-size: 1.5rem; }
+  .thumb { width: 84px; height: 64px; }
+}

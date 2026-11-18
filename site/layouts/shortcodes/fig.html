@@ -1,0 +1,23 @@
+{{- /*
+그림 넣기. 글 폴더(page bundle) 안의 이미지 파일을 쓴다.
+  {{< fig src="d0a.svg" caption="설명" source="직접 작성" >}}
+  {{< fig src="cmp_tool.jpg" caption="설명" source="cpxmn / Wikimedia Commons" source_url="https://..." license="CC BY-SA 2.0" license_url="https://..." >}}
+그림 번호는 글 안에서 자동으로 매긴다.
+*/ -}}
+{{- $n := add (.Page.Store.Get "fig" | default 0) 1 -}}
+{{- .Page.Store.Set "fig" $n -}}
+{{- $img := .Page.Resources.GetMatch (.Get "src") -}}
+<figure class="fig{{ with .Get "class" }} {{ . }}{{ end }}">
+  {{- with $img }}
+  <a href="{{ .RelPermalink }}" target="_blank" rel="noopener"><img src="{{ .RelPermalink }}" alt="{{ $.Get "caption" }}" loading="lazy"></a>
+  {{- else }}
+  <p class="missing">그림 파일 없음: {{ .Get "src" }}</p>
+  {{- end }}
+  <figcaption>
+    <strong>그림 {{ $n }}.</strong> {{ .Get "caption" | markdownify }}
+    <span class="src">출처:
+      {{- with .Get "source_url" }} <a href="{{ . }}" target="_blank" rel="noopener">{{ $.Get "source" }}</a>{{ else }} {{ .Get "source" }}{{ end }}
+      {{- with .Get "license" }} · {{ with $.Get "license_url" }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $.Get "license" }}</a>{{ else }}{{ $.Get "license" }}{{ end }}{{ end }}
+    </span>
+  </figcaption>
+</figure>

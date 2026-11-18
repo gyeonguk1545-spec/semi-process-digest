@@ -1,0 +1,18 @@
+# 비밀 정보 — 절대 커밋 금지
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 로컬 데이터 (DB 를 저장소에 둘지 5단계에서 결정)
+data/*.sqlite
+data/*.db
+
+# Hugo 빌드 결과
+site/public/
+site/resources/
+.hugo_build.lock

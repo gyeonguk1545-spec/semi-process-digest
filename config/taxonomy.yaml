@@ -1,0 +1,151 @@
+# 공정 분류 체계 — 제목+요약에 키워드가 있으면 그 태그를 붙인다 (대소문자 무시).
+# - 영문 대문자 약어(ALD, CMP …)는 단어 경계로만 매칭 (SALE 안의 ALE 같은 오탐 방지).
+# - 마음대로 고쳐도 된다. 고친 뒤 collect.py 를 다시 돌리면 새 글부터 반영.
+
+노광:
+  - EUV
+  - High-NA
+  - lithography
+  - 리소그래피
+  - 노광
+  - photoresist
+  - 포토레지스트
+  - 감광액
+  - pellicle
+  - 펠리클
+  - multi-patterning
+  - 멀티패터닝
+  - nanoimprint
+  - 나노임프린트
+
+식각:
+  - etch
+  - etching
+  - 식각
+  - 에칭
+  - ALE
+  - high aspect ratio
+  - 고종횡비
+  - cryogenic etch
+  - 극저온 식각
+
+증착:
+  - deposition
+  - 증착
+  - ALD
+  - CVD
+  - PVD
+  - epitaxy
+  - epitaxial
+  - 에피택시
+  - area-selective
+  - 선택적 증착
+  - high-k
+
+배선:
+  - interconnect
+  - 배선
+  - molybdenum
+  - 몰리브덴
+  - ruthenium
+  - 루테늄
+  - backside power
+  - BSPDN
+  - 후면전력
+  - 후면 전력
+  - PowerVia
+  - Super Power Rail
+  - low-k
+
+트랜지스터:
+  - GAA
+  - gate-all-around
+  - nanosheet
+  - 나노시트
+  - CFET
+  - FinFET
+  - 핀펫
+  - 2nm
+  - 2나노
+  - 1.4nm
+  - 1.4나노
+  - 18A
+  - 14A
+  - A16
+  - MoS2
+  - 2D material
+  - 2차원 소재
+
+메모리:
+  - DRAM
+  - D램
+  - 디램
+  - HBM
+  - 3D NAND
+  - V-NAND
+  - 낸드
+  - NAND
+  - 3D DRAM
+  - 4F2
+  - VCT
+  - ferroelectric
+  - 강유전체
+  - MRAM
+
+패키징:
+  - packaging
+  - 패키징
+  - hybrid bonding
+  - 하이브리드 본딩
+  - TSV
+  - chiplet
+  - 칩렛
+  - CoWoS
+  - interposer
+  - 인터포저
+  - glass substrate
+  - 유리기판
+  - 유리 기판
+  - fan-out
+  - FOPLP
+  - 본더
+
+계측검사:
+  - metrology
+  - 계측
+  - inspection
+  - 검사장비
+  - e-beam
+  - electron beam
+  - 전자빔
+  - defect
+  - 결함
+  - CD-SEM
+  - multi-beam
+  - 멀티빔
+
+CMP세정:
+  - CMP
+  - chemical mechanical
+  - 평탄화
+  - wafer cleaning
+  - 세정
+
+이온주입열처리:
+  - ion implantation
+  - 이온주입
+  - anneal
+  - annealing
+  - 어닐링
+  - 열처리
+
+내연구연결:
+  - field emission
+  - 전계방출
+  - carbon nanotube
+  - 탄소나노튜브
+  - CNT
+  - cold cathode
+  - 냉음극
+  - X-ray source
+  - 엑스선 튜브

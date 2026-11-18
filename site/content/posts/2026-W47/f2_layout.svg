@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330" width="820" height="330" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="820" height="330" fill="#ffffff"/>
+  <defs>
+    <pattern id="g" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#c9d3de" stroke-width="1"/></pattern>
+  </defs>
+
+  <text x="60" y="38" font-size="18" font-weight="700" fill="#1f2328">6F² 셀 (현재 주류)</text>
+  <text x="60" y="62" font-size="13" fill="#555">셀 1개 = 가로 3F × 세로 2F</text>
+  <g transform="translate(60,85)">
+    <rect width="180" height="120" fill="url(#g)" stroke="#888"/>
+    <g fill="#4a7fc1" fill-opacity=".85" stroke="#1f3d66" stroke-width="2">
+      <rect x="2" y="2" width="86" height="56"/><rect x="92" y="2" width="86" height="56"/>
+      <rect x="2" y="62" width="86" height="56"/><rect x="92" y="62" width="86" height="56"/>
+    </g>
+    <text x="90" y="145" font-size="14" fill="#1f2328" text-anchor="middle">6F × 4F 영역에 셀 <tspan font-weight="700">4개</tspan></text>
+  </g>
+
+  <text x="330" y="38" font-size="18" font-weight="700" fill="#1f2328">4F² 셀 (차세대)</text>
+  <text x="330" y="62" font-size="13" fill="#555">셀 1개 = 가로 2F × 세로 2F</text>
+  <g transform="translate(330,85)">
+    <rect width="180" height="120" fill="url(#g)" stroke="#888"/>
+    <g fill="#38a169" fill-opacity=".85" stroke="#1d5a36" stroke-width="2">
+      <rect x="2" y="2" width="56" height="56"/><rect x="62" y="2" width="56" height="56"/><rect x="122" y="2" width="56" height="56"/>
+      <rect x="2" y="62" width="56" height="56"/><rect x="62" y="62" width="56" height="56"/><rect x="122" y="62" width="56" height="56"/>
+    </g>
+    <text x="90" y="145" font-size="14" fill="#1f2328" text-anchor="middle">같은 영역에 셀 <tspan font-weight="700">6개 (1.5배)</tspan></text>
+  </g>
+
+  <g font-size="13.5" fill="#333">
+    <text x="575" y="100">F = 최소 선폭 (feature size)</text>
+    <text x="575" y="126">회색 격자 한 칸 = F × F</text>
+    <text x="575" y="166" font-weight="700" fill="#1d5a36">4F²의 조건</text>
+    <text x="575" y="190">트랜지스터가 2F×2F 안에</text>
+    <text x="575" y="212">들어가야 함 → 채널을 수직으로</text>
+    <text x="575" y="234">세운 VCT(수직채널 트랜지스터)</text>
+    <text x="575" y="270" font-weight="700" fill="#9c3b2a">난제</text>
+    <text x="575" y="294">좁은 면적에 트랜지스터와</text>
+    <text x="575" y="316">커패시터를 함께 배치</text>
+  </g>
+</svg>

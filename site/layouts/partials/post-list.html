@@ -1,0 +1,14 @@
+<ul class="post-list">
+{{ range . }}
+  <li>
+    {{ $page := . }}
+    {{ with .Params.cover }}{{ with $page.Resources.GetMatch . }}<a href="{{ $page.RelPermalink }}"><img class="thumb" src="{{ .RelPermalink }}" alt=""></a>{{ end }}{{ end }}
+    <div>
+      <p class="meta">{{ .Date.Format "2006-01-02" }}</p>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+      <p>{{ range .Params.tags }}<a class="tag" href="{{ "tags/" | relURL }}{{ . | urlize }}/">#{{ . }}</a> {{ end }}</p>
+    </div>
+  </li>
+{{ end }}
+</ul>
