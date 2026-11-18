@@ -11,6 +11,7 @@ title: "소개"
 ### 업데이트 주기
 - 수집: 매일 오전 9시 (자동)
 - 주간 글: 매주 월요일
+- 기초 강의: 매주 화·목요일
 
 소스 코드와 수집 데이터: [GitHub 저장소](https://github.com/gyeonguk1545-spec/semi-process-digest)
 
