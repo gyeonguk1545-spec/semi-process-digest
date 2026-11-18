@@ -64,7 +64,7 @@ semi-process-digest/
 | 수집 출처 목록 (편집 가능) | `config\sources.yaml` | — |
 | 공정 태그·키워드 (편집 가능) | `config\taxonomy.yaml` | — |
 | 주간 글 작성 지시문 (편집 가능) | `prompts\weekly_digest.md` | — |
-| 블로그 주소 | `https://<내아이디>.github.io/semi-process-digest/` | 5단계 이후 |
+| **블로그 주소** | https://gyeonguk1545-spec.github.io/semi-process-digest/ | 글이 push 되면 1~2분 뒤 반영 |
 
 주차는 ISO 기준(월요일 시작). 예: 2026-11-17 은 `2026-W47`.
 
@@ -180,4 +180,4 @@ cd site; hugo server
 - [x] 3. 주간 글 지시문 (첫 글: `site/content/posts/2026-W47.md`)
 - [x] 4. 블로그 (Hugo, 그림·배경 지식 포함 첫 글)
 - [x] 5. GitHub 자동화 (저장소 gyeonguk1545-spec/semi-process-digest, 매일 09:00 수집, 매주 월 09:30 경 주간 글 예약 작업)
-- [ ] 6. 운영 시작
+- [x] 6. 운영 시작 (2026-11-18 블로그 공개)
