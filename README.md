@@ -179,5 +179,5 @@ cd site; hugo server
 - [x] 2. 수집기 (2026-11-17 첫 수집 64건)
 - [x] 3. 주간 글 지시문 (첫 글: `site/content/posts/2026-W47.md`)
 - [x] 4. 블로그 (Hugo, 그림·배경 지식 포함 첫 글)
-- [ ] 5. GitHub 자동화
+- [x] 5. GitHub 자동화 (저장소 gyeonguk1545-spec/semi-process-digest, 매일 09:00 수집, 매주 월 09:30 경 주간 글 예약 작업)
 - [ ] 6. 운영 시작
