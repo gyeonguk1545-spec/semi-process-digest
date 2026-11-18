@@ -6,7 +6,7 @@ title = "반도체 공정 주간 노트"
 enableRobotsTXT = true
 
 [params]
-  description = "반도체 공정 기술 동향을 매주 정리하는 학습 노트. 뉴스·논문 요약 + 배경 지식 + 면접 질문."
+  description = "반도체 공정 기술 동향을 매주 정리하는 학습 노트. 최신 동향(주간 글)과 기본기(기초 강의 36강)를 함께 공부합니다."
   author = "C-beam Lab 대학원생"
 
 [taxonomies]
@@ -24,10 +24,14 @@ enableRobotsTXT = true
     pageRef = "/posts"
     weight = 1
   [[menus.main]]
+    name = "기초 강의"
+    pageRef = "/study"
+    weight = 2
+  [[menus.main]]
     name = "태그"
     pageRef = "/tags"
-    weight = 2
+    weight = 3
   [[menus.main]]
     name = "소개"
     pageRef = "/about"
-    weight = 3
+    weight = 4

@@ -1,0 +1,27 @@
+{{ define "main" }}
+<h1 class="list-title">{{ .Title }}</h1>
+<div class="content">{{ .Content }}</div>
+
+{{ $written := dict }}
+{{ range .Pages }}{{ $written = merge $written (dict (string .Weight) .) }}{{ end }}
+{{ $lessons := site.Data.curriculum.lessons }}
+{{ $done := len .Pages }}
+<p class="meta">진행 {{ $done }} / {{ len $lessons }}강</p>
+<div class="progress"><span style="width: {{ div (mul $done 100.0) (len $lessons) }}%"></span></div>
+
+{{ range $part := slice "이론" "후공정" "장비" }}
+  <h2 class="part-title">{{ $part }}편</h2>
+  <ol class="lesson-list">
+  {{ range where $lessons "part" $part }}
+    {{ $p := index $written (string .no) }}
+    <li class="{{ if $p }}done{{ else }}todo{{ end }}">
+      <span class="no">{{ .no }}</span>
+      <div>
+        {{ with $p }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ else }}<span class="t">{{ .title }}</span> <span class="soon">예정</span>{{ end }}
+        <p class="pts">{{ delimit .points " · " }}</p>
+      </div>
+    </li>
+  {{ end }}
+  </ol>
+{{ end }}
+{{ end }}

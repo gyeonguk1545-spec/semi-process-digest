@@ -108,6 +108,22 @@ a:hover { text-decoration: underline; }
 .content details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin: 10px 0; }
 .content details summary { cursor: pointer; font-weight: 600; }
 
+/* 기초 강의 목차 */
+.progress { height: 8px; background: var(--line); border-radius: 999px; overflow: hidden; margin: 6px 0 8px; }
+.progress span { display: block; height: 100%; background: var(--accent); }
+.part-title { font-size: 1.25rem; margin: 36px 0 8px; padding-top: 10px; border-top: 2px solid var(--line); }
+.lesson-list { list-style: none; padding: 0; margin: 0; }
+.lesson-list li { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.lesson-list .no { flex: none; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-size: .85rem; font-weight: 700; background: var(--line); color: var(--muted); }
+.lesson-list li.done .no { background: var(--accent); color: #fff; }
+.lesson-list li.done a { font-weight: 700; }
+.lesson-list .t { color: var(--muted); }
+.lesson-list .soon { font-size: .75rem; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0 6px; margin-left: 4px; }
+.lesson-list .pts { margin: 2px 0 0; font-size: .82rem; color: var(--muted); line-height: 1.5; }
+.home-section { display: flex; justify-content: space-between; align-items: baseline; margin: 36px 0 0; }
+.home-section h2 { margin: 0; font-size: 1.2rem; }
+.home-section a { font-size: .9rem; }
+
 .pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 48px; font-size: .92rem; }
 
 @media (max-width: 560px) {

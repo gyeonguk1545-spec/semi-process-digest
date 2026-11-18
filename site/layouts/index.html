@@ -2,5 +2,10 @@
 <section class="hero">
   <p>{{ site.Params.description }}</p>
 </section>
-{{ partial "post-list.html" (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+
+<div class="home-section"><h2>최신 동향 · 주간 글</h2><a href="{{ "posts/" | relURL }}">전체 보기 →</a></div>
+{{ partial "post-list.html" (first 5 (where site.RegularPages "Section" "posts").ByDate.Reverse) }}
+
+<div class="home-section"><h2>기초 강의</h2><a href="{{ "study/" | relURL }}">36강 목차 →</a></div>
+{{ partial "post-list.html" (first 5 (where site.RegularPages "Section" "study").ByWeight.Reverse) }}
 {{ end }}

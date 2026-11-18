@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 380" width="860" height="380" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="860" height="380" fill="#ffffff"/>
+  <defs>
+    <pattern id="fill" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#4a7fc1"/><circle cx="4" cy="4" r="1.6" fill="#ffffff" fill-opacity=".55"/></pattern>
+    <marker id="dv" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c53030"/></marker>
+  </defs>
+  <text x="430" y="30" font-size="16" font-weight="700" fill="#1f2328" text-anchor="middle">에너지 밴드로 본 도체 · 반도체 · 절연체</text>
+  <text x="28" y="70" font-size="12" fill="#777">전자 에너지 ↑</text>
+
+  <!-- 도체 -->
+  <g transform="translate(70,0)">
+    <text x="90" y="70" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">도체 (금속)</text>
+    <rect x="20" y="95" width="140" height="80" fill="#eef3fa" stroke="#4a7fc1"/>
+    <rect x="20" y="170" width="140" height="120" fill="url(#fill)" stroke="#4a7fc1"/>
+    <rect x="20" y="140" width="140" height="35" fill="url(#fill)"/>
+    <line x1="10" y1="140" x2="170" y2="140" stroke="#2f855a" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="176" y="144" font-size="12" fill="#2f855a">E_F</text>
+    <text x="90" y="318" font-size="12.5" fill="#444" text-anchor="middle">밴드가 겹치거나 반만 차 있음</text>
+    <text x="90" y="336" font-size="12.5" fill="#444" text-anchor="middle">→ 전자가 바로 움직임</text>
+  </g>
+
+  <!-- 반도체 -->
+  <g transform="translate(340,0)">
+    <text x="90" y="70" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">반도체 (Si)</text>
+    <rect x="20" y="95" width="140" height="70" fill="#eef3fa" stroke="#4a7fc1"/>
+    <text x="90" y="135" font-size="12.5" fill="#2c4f7c" text-anchor="middle">전도대</text>
+    <circle cx="60" cy="155" r="4" fill="#1f3d66"/><circle cx="118" cy="152" r="4" fill="#1f3d66"/>
+    <rect x="20" y="205" width="140" height="85" fill="url(#fill)" stroke="#4a7fc1"/>
+    <text x="90" y="255" font-size="12.5" fill="#ffffff" text-anchor="middle" font-weight="700">가전자대</text>
+    <circle cx="60" cy="210" r="4" fill="#ffffff" stroke="#1f3d66"/><circle cx="118" cy="210" r="4" fill="#ffffff" stroke="#1f3d66"/>
+    <line x1="-6" y1="166" x2="-6" y2="204" stroke="#c53030" stroke-width="2" marker-start="url(#dv)" marker-end="url(#dv)"/>
+    <text x="-12" y="190" font-size="12" fill="#c53030" text-anchor="end">E_g ≈ 1.12 eV</text>
+    <line x1="10" y1="185" x2="170" y2="185" stroke="#2f855a" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="176" y="189" font-size="12" fill="#2f855a">E_F</text>
+    <text x="90" y="318" font-size="12.5" fill="#444" text-anchor="middle">틈이 작아 열·빛·도핑으로</text>
+    <text x="90" y="336" font-size="12.5" fill="#444" text-anchor="middle">전자(●)와 정공(○)이 생김</text>
+  </g>
+
+  <!-- 절연체 -->
+  <g transform="translate(610,0)">
+    <text x="90" y="70" font-size="15" font-weight="700" fill="#1f2328" text-anchor="middle">절연체 (SiO₂)</text>
+    <rect x="20" y="85" width="140" height="40" fill="#eef3fa" stroke="#4a7fc1"/>
+    <rect x="20" y="230" width="140" height="60" fill="url(#fill)" stroke="#4a7fc1"/>
+    <line x1="-6" y1="126" x2="-6" y2="229" stroke="#c53030" stroke-width="2" marker-start="url(#dv)" marker-end="url(#dv)"/>
+    <text x="-12" y="182" font-size="12" fill="#c53030" text-anchor="end">약 9 eV</text>
+    <text x="90" y="318" font-size="12.5" fill="#444" text-anchor="middle">틈이 너무 커서</text>
+    <text x="90" y="336" font-size="12.5" fill="#444" text-anchor="middle">상온에서 전자가 못 넘어감</text>
+  </g>
+  <text x="430" y="368" font-size="11.5" fill="#777" text-anchor="middle">파란 칠 = 전자로 채워진 상태, 빈 칸 = 비어 있는 상태 · 밴드 높이는 개념적으로 그림</text>
+</svg>

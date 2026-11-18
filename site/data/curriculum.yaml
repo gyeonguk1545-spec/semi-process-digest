@@ -1,0 +1,230 @@
+# 기초 강의 커리큘럼 — 주 1강, 36강 (약 9개월)
+# 반도체 전공·직무 면접 대비서의 일반적인 구성(이론 / 후공정 / 장비)을 참고해 자체 구성한 목차.
+# 특정 교재의 내용·문장을 옮기지 않는다.
+#
+# - 강의 글 위치: site/content/study/<번호 두 자리>-<slug>/index.md  (예: study/01-semiconductor-basics/)
+# - 예약 작업은 아직 글 폴더가 없는 가장 작은 번호의 강의를 쓴다.
+# - 순서·주제는 자유롭게 고쳐도 된다. 이미 쓴 강의의 번호는 바꾸지 않는다.
+# - keywords: 그 주 공정 뉴스 다이제스트와 연결할 때 쓰는 태그 (config/taxonomy.yaml 태그명)
+
+lessons:
+  # ───────────── 이론편: 반도체 기초 ─────────────
+  - no: 1
+    part: 이론
+    slug: semiconductor-basics
+    title: 반도체란 무엇인가 — 에너지 밴드, 도핑, 캐리어
+    points: [도체·반도체·절연체 밴드갭, 진성/외인성 반도체, n형·p형 도핑, 페르미 준위, 드리프트와 확산 전류, 이동도]
+    keywords: []
+  - no: 2
+    part: 이론
+    slug: pn-junction
+    title: PN 접합과 다이오드
+    points: [공핍층 형성, 내부 전위, 순방향·역방향 바이어스, I-V 특성, 항복(애벌랜치·제너), 금속-반도체 접합(쇼트키·오믹)]
+    keywords: []
+  - no: 3
+    part: 이론
+    slug: mosfet-basics
+    title: MOSFET 구조와 동작
+    points: [MOS 커패시터(축적·공핍·반전), 문턱전압, 선형·포화 영역, nMOS·pMOS·CMOS 인버터, 게이트 산화막의 역할]
+    keywords: [트랜지스터]
+  - no: 4
+    part: 이론
+    slug: scaling-and-new-transistors
+    title: 스케일링과 단채널 효과 → FinFET, GAA, CFET
+    points: [무어의 법칙과 데너드 스케일링, 단채널 효과(DIBL·누설), High-k/메탈게이트, FinFET, GAA(나노시트), CFET, 후면전력공급]
+    keywords: [트랜지스터, 배선]
+  - no: 5
+    part: 이론
+    slug: dram
+    title: 메모리 1 — D램의 구조와 동작
+    points: [1T1C 셀, 읽기·쓰기·리프레시, 센스앰프, 커패시터 고종횡비, 6F²·4F²·VCT, HBM 개념]
+    keywords: [메모리]
+  - no: 6
+    part: 이론
+    slug: nand-flash
+    title: 메모리 2 — 낸드 플래시와 3D 낸드
+    points: [플로팅게이트·CTF, 프로그램·소거(터널링), SLC~QLC, 3D 낸드 적층·채널 홀 식각, CMOS 하부 배치·웨이퍼 본딩]
+    keywords: [메모리, 식각]
+  # ───────────── 이론편: 8대 공정 ─────────────
+  - no: 7
+    part: 이론
+    slug: wafer
+    title: 웨이퍼 제조 — 단결정 성장부터 연마까지
+    points: [실리콘 정제, CZ·FZ 성장, 잉곳 가공·슬라이싱·연마, 결정 방향·노치, 에피 웨이퍼, SOI]
+    keywords: []
+  - no: 8
+    part: 이론
+    slug: oxidation
+    title: 산화 공정
+    points: [건식·습식 열산화, Deal-Grove 모델, 산화막의 용도, 계면 결함, 게이트 절연막 변천(SiO₂→High-k)]
+    keywords: [증착]
+  - no: 9
+    part: 이론
+    slug: photo-1
+    title: 포토 공정 1 — 공정 순서와 해상도
+    points: [HMDS·도포·소프트베이크·노광·PEB·현상·하드베이크, 포지티브·네거티브, 레일리 식(k₁·λ/NA), 초점심도, 오버레이]
+    keywords: [노광]
+  - no: 10
+    part: 이론
+    slug: photo-2
+    title: 포토 공정 2 — 액침, 멀티패터닝, EUV
+    points: [KrF·ArF·액침 ArF, 멀티패터닝(LELE·SADP·SAQP), OPC·위상반전 마스크, EUV 광원·반사 광학계·펠리클, High-NA]
+    keywords: [노광]
+  - no: 11
+    part: 이론
+    slug: etch
+    title: 식각 공정
+    points: [습식·건식 식각, 플라즈마 기초, 이방성·선택비·식각률, RIE 메커니즘, 고종횡비 식각 문제, ALE]
+    keywords: [식각]
+  - no: 12
+    part: 이론
+    slug: deposition
+    title: 증착 공정 — CVD, PVD, ALD
+    points: [박막 성장 메커니즘, LPCVD·PECVD, 스퍼터링·증발, ALD 자기제한 반응, 단차피복성(step coverage), 박막 응력]
+    keywords: [증착]
+  - no: 13
+    part: 이론
+    slug: implant-anneal
+    title: 이온주입과 열처리
+    points: [도즈·에너지·투사 범위, 채널링, 손상과 비정질화, 활성화 어닐, RTP·레이저 어닐, 확산과 열 예산]
+    keywords: [이온주입열처리]
+  - no: 14
+    part: 이론
+    slug: metallization
+    title: 금속 배선
+    points: [Al→Cu 전환, 다마신·듀얼 다마신, 배리어·시드, 일렉트로마이그레이션, low-k, RC 지연, Ru·Mo 등 신금속]
+    keywords: [배선]
+  - no: 15
+    part: 이론
+    slug: cmp-clean
+    title: CMP와 세정
+    points: [CMP 원리·프레스턴 식, 슬러리·패드, 디싱·이로전, 엔드포인트 검출, RCA 세정, 파티클·금속 오염 관리]
+    keywords: [CMP세정]
+  - no: 16
+    part: 이론
+    slug: yield-metrology
+    title: 수율과 계측
+    points: [수율 정의·결함 밀도 모델, 인라인 계측(두께·CD·오버레이), 결함 검사, 전기적 특성 검사(WAT), 공정 관리(SPC)]
+    keywords: [계측검사]
+  # ───────────── 후공정편 ─────────────
+  - no: 17
+    part: 후공정
+    slug: backend-overview
+    title: 후공정 개요와 웨이퍼 테스트
+    points: [전공정·후공정 구분, 테스트·패키징 흐름, EDS(프로브 테스트), 프로브 카드, 리페어(레이저·eFuse), KGD]
+    keywords: [패키징]
+  - no: 18
+    part: 후공정
+    slug: grinding-dicing
+    title: 백그라인딩과 다이싱
+    points: [웨이퍼 박화, 보호 테이프, 블레이드·레이저·스텔스 다이싱, 칩핑·크랙, DBG(다이싱 후 연마)]
+    keywords: [패키징]
+  - no: 19
+    part: 후공정
+    slug: die-attach-wire-bond
+    title: 다이 어태치와 와이어 본딩
+    points: [다이 어태치 소재(에폭시·DAF), 와이어 본딩(볼·웨지), 금·구리 와이어, 본딩 불량]
+    keywords: [패키징]
+  - no: 20
+    part: 후공정
+    slug: flip-chip
+    title: 플립칩과 범프
+    points: [솔더 범프·Cu 필러, UBM, 리플로우, 언더필, TC 본딩, 와이어 본딩 대비 장단점]
+    keywords: [패키징]
+  - no: 21
+    part: 후공정
+    slug: molding-packages
+    title: 몰딩과 패키지 종류
+    points: [EMC 몰딩, 리드프레임·기판, QFP·BGA·CSP, 패키지 기판(코어리스·유리기판), 마킹·솔더볼 부착]
+    keywords: [패키징]
+  - no: 22
+    part: 후공정
+    slug: wlp-fanout
+    title: 웨이퍼 레벨 패키지와 팬아웃
+    points: [WLCSP, 재배선층(RDL), 팬인·팬아웃(FOWLP), 패널 레벨(FOPLP), 다이 쉬프트·워피지]
+    keywords: [패키징]
+  - no: 23
+    part: 후공정
+    slug: tsv-hbm
+    title: TSV와 HBM 적층
+    points: [TSV 공정(비아 퍼스트·미들·라스트), 웨이퍼 박화·임시 접합, TC-NCF·MR-MUF, 적층 단수와 열, HBM 세대]
+    keywords: [패키징, 메모리]
+  - no: 24
+    part: 후공정
+    slug: advanced-packaging
+    title: 2.5D·3D 패키징과 칩렛
+    points: [실리콘 인터포저·브리지, CoWoS류, 하이브리드 본딩(W2W·D2W), 칩렛·UCIe, 열 관리]
+    keywords: [패키징]
+  - no: 25
+    part: 후공정
+    slug: package-reliability
+    title: 패키지 신뢰성
+    points: [열팽창 계수 불일치, 워피지, 박리·크랙, 신뢰성 시험(TC·HAST·HTS), 고장 분석(SAM·X-ray·단면)]
+    keywords: [패키징, 계측검사]
+  - no: 26
+    part: 후공정
+    slug: final-test
+    title: 최종 테스트와 번인
+    points: [패키지 테스트 흐름, ATE·핸들러·소켓, 번인, 빈 분류, 테스트 비용과 커버리지]
+    keywords: [패키징]
+  # ───────────── 장비편 ─────────────
+  - no: 27
+    part: 장비
+    slug: fab-infra
+    title: 팹 인프라 — 클린룸, 가스·케미컬, 자동화
+    points: [클린룸 등급·기류, FOUP·AMHS, 가스·케미컬 공급, 배기·스크러버, 설비 유틸리티]
+    keywords: []
+  - no: 28
+    part: 장비
+    slug: vacuum
+    title: 진공 기술 — 펌프와 게이지
+    points: [진공 영역(저·중·고·초고진공), 평균 자유 행로, 로터리·드라이·터보·크라이오 펌프, 피라니·바라트론·이온 게이지, 리크 체크]
+    keywords: []
+  - no: 29
+    part: 장비
+    slug: plasma-source
+    title: 플라즈마 소스와 RF
+    points: [플라즈마 생성 원리, 쉬스, CCP·ICP·리모트 플라즈마, RF 매칭, 바이어스 전력, 플라즈마 진단(OES)]
+    keywords: [식각, 증착]
+  - no: 30
+    part: 장비
+    slug: litho-tool
+    title: 노광 장비의 구조
+    points: [스캐너·스테퍼, 광원(엑시머·EUV LPP), 투영 광학계, 웨이퍼·레티클 스테이지, 정렬·레벨링, 트랙 장비]
+    keywords: [노광]
+  - no: 31
+    part: 장비
+    slug: etch-tool
+    title: 식각 장비
+    points: [챔버 구조, ESC(정전척)와 온도 제어, 가스 공급·샤워헤드, 엔드포인트 검출, 챔버 시즈닝·세정]
+    keywords: [식각]
+  - no: 32
+    part: 장비
+    slug: deposition-tool
+    title: 증착 장비
+    points: [CVD·PECVD 챔버, ALD 장비(싱글·배치·공간분할), 스퍼터 타깃·마그네트론, 전구체 공급, 파티클 관리]
+    keywords: [증착]
+  - no: 33
+    part: 장비
+    slug: implant-thermal-tool
+    title: 이온주입기와 열처리 장비
+    points: [이온 소스·질량 분석기·가속관, 빔 스캔, 도즈 측정(패러데이 컵), 퍼니스·RTP·레이저 어닐 장비]
+    keywords: [이온주입열처리]
+  - no: 34
+    part: 장비
+    slug: cmp-clean-tool
+    title: CMP와 세정 장비
+    points: [CMP 헤드·플래튼·컨디셔너, 인시추 계측, 매엽식·배치식 세정, 건조(IPA·스핀), 소모품 관리]
+    keywords: [CMP세정]
+  - no: 35
+    part: 장비
+    slug: metrology-tool
+    title: 계측·검사 장비
+    points: [엘립소미터·반사율 두께 측정, CD-SEM, 오버레이 계측, 광학 결함 검사, 전자빔 검사·멀티빔, 리뷰 SEM]
+    keywords: [계측검사]
+  - no: 36
+    part: 장비
+    slug: equipment-engineering
+    title: 장비 엔지니어의 실무
+    points: [PM(예방 정비), FDC·APC, 가동률·MTBF·MTTR, 챔버 매칭, 트러블슈팅 사례 흐름, 안전]
+    keywords: [계측검사]

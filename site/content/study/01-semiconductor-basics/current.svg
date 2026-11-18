@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 300" width="860" height="300" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="860" height="300" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f3d66"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c53030"/></marker>
+  </defs>
+
+  <!-- 드리프트 -->
+  <text x="210" y="32" font-size="16" font-weight="700" fill="#1f2328" text-anchor="middle">① 드리프트 전류 — 전기장이 민다</text>
+  <rect x="40" y="60" width="340" height="140" rx="6" fill="#f7fafc" stroke="#a0aec0"/>
+  <text x="30" y="135" font-size="20" font-weight="700" fill="#c53030" text-anchor="end">+</text>
+  <text x="392" y="135" font-size="20" font-weight="700" fill="#2b6cb0">−</text>
+  <line x1="70" y1="215" x2="350" y2="215" stroke="#444" stroke-width="2" marker-end="url(#a)"/>
+  <text x="210" y="234" font-size="12.5" fill="#444" text-anchor="middle">전기장 E 방향</text>
+  <g>
+    <circle cx="140" cy="95" r="7" fill="#ffffff" stroke="#c53030" stroke-width="2"/><line x1="152" y1="95" x2="200" y2="95" stroke="#c53030" stroke-width="2" marker-end="url(#r)"/>
+    <circle cx="260" cy="120" r="7" fill="#ffffff" stroke="#c53030" stroke-width="2"/><line x1="272" y1="120" x2="320" y2="120" stroke="#c53030" stroke-width="2" marker-end="url(#r)"/>
+    <circle cx="280" cy="160" r="7" fill="#1f3d66"/><line x1="268" y1="160" x2="220" y2="160" stroke="#1f3d66" stroke-width="2" marker-end="url(#b)"/>
+    <circle cx="150" cy="175" r="7" fill="#1f3d66"/><line x1="138" y1="175" x2="90" y2="175" stroke="#1f3d66" stroke-width="2" marker-end="url(#b)"/>
+  </g>
+  <text x="210" y="262" font-size="13" fill="#1f2328" text-anchor="middle">J = q (n·μₙ + p·μₚ) · E</text>
+  <text x="210" y="282" font-size="12" fill="#555" text-anchor="middle">정공(○)은 E 방향, 전자(●)는 반대 — 전류는 둘 다 E 방향</text>
+
+  <!-- 확산 -->
+  <text x="640" y="32" font-size="16" font-weight="700" fill="#1f2328" text-anchor="middle">② 확산 전류 — 농도 차이가 민다</text>
+  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#1f3d66" stop-opacity=".55"/><stop offset="1" stop-color="#1f3d66" stop-opacity=".04"/></linearGradient></defs>
+  <rect x="470" y="60" width="340" height="140" rx="6" fill="url(#g)" stroke="#a0aec0"/>
+  <g fill="#1f3d66">
+    <circle cx="495" cy="80" r="5"/><circle cx="510" cy="110" r="5"/><circle cx="490" cy="140" r="5"/><circle cx="515" cy="170" r="5"/><circle cx="535" cy="90" r="5"/>
+    <circle cx="545" cy="150" r="5"/><circle cx="560" cy="120" r="5"/><circle cx="575" cy="180" r="5"/><circle cx="600" cy="95" r="5"/><circle cx="620" cy="160" r="5"/>
+    <circle cx="660" cy="120" r="5"/><circle cx="720" cy="170" r="5"/><circle cx="770" cy="100" r="5"/>
+  </g>
+  <line x1="600" y1="215" x2="760" y2="215" stroke="#444" stroke-width="2" marker-end="url(#a)"/>
+  <text x="680" y="234" font-size="12.5" fill="#444" text-anchor="middle">전자가 퍼지는 방향 (많은 곳 → 적은 곳)</text>
+  <text x="640" y="262" font-size="13" fill="#1f2328" text-anchor="middle">Jₙ = q·Dₙ·(dn/dx),  D = μ·kT/q (아인슈타인 관계)</text>
+  <text x="640" y="282" font-size="12" fill="#555" text-anchor="middle">PN 접합·트랜지스터 동작에서 드리프트와 함께 핵심</text>
+</svg>
