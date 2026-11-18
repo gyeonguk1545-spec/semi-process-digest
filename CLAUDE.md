@@ -15,6 +15,8 @@
 - 게시: push 시 GitHub Actions 가 Hugo 빌드 → Pages.
 - Anthropic API 키·`anthropic` SDK 를 쓰지 않는다. API 방식으로 바꾸려면 사용자에게 별도 결제임을 알리고 확인받는다.
 
+- 기초 강의: Claude Code 예약 작업이 매주 목요일 `prompts/study_lesson.md` 를 따라 `site/data/curriculum.yaml` 의 다음 강의를 `site/content/study/<번호>-<slug>/` 에 쓴다.
+
 ## 규칙
 1. **토큰·비밀번호를 채팅으로 받지 않는다.** 코드·커밋에 비밀 정보를 넣지 않는다.
 2. 수집 출처 URL 은 실제로 접속해 확인한 것만 `config/sources.yaml` 에 넣는다. 추측한 URL 금지.
