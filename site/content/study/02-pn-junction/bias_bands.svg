@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="880" height="380" fill="#ffffff"/>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c53030"/></marker>
+  </defs>
+
+  <!-- 공통: p 왼쪽, n 오른쪽. Ec 파랑, Ev 초록, EF 점선 -->
+  <!-- (a) 평형 -->
+  <text x="145" y="30" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2328">(a) 열평형 (V = 0)</text>
+  <g transform="translate(20,0)">
+    <path d="M10 90 L95 90 C 125 90, 135 160, 165 160 L 250 160" fill="none" stroke="#2b6cb0" stroke-width="3"/>
+    <path d="M10 200 L95 200 C 125 200, 135 270, 165 270 L 250 270" fill="none" stroke="#2f855a" stroke-width="3"/>
+    <line x1="10" y1="185" x2="250" y2="185" stroke="#4a5568" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="255" y="164" font-size="12" fill="#2b6cb0">E_c</text>
+    <text x="255" y="274" font-size="12" fill="#2f855a">E_v</text>
+    <text x="255" y="189" font-size="12" fill="#4a5568">E_F</text>
+    <rect x="95" y="60" width="70" height="230" fill="#ecc94b" opacity="0.15"/>
+    <text x="130" y="306" font-size="12" text-anchor="middle" fill="#744210">공핍층</text>
+    <text x="45" y="325" font-size="13" text-anchor="middle" fill="#1f2328">p형</text>
+    <text x="215" y="325" font-size="13" text-anchor="middle" fill="#1f2328">n형</text>
+    <line x1="60" y1="90" x2="60" y2="160" stroke="#c53030" stroke-width="1.5" marker-end="url(#ar)"/>
+    <line x1="60" y1="160" x2="60" y2="90" stroke="#c53030" stroke-width="1.5" marker-end="url(#ar)"/>
+    <text x="22" y="130" font-size="12" fill="#c53030">qV_bi</text>
+    <text x="130" y="350" font-size="12" text-anchor="middle" fill="#444">E_F가 한 줄로 평평 → 알짜 전류 0</text>
+  </g>
+
+  <!-- (b) 순방향 -->
+  <text x="440" y="30" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2328">(b) 순방향 (p에 +V)</text>
+  <g transform="translate(315,0)">
+    <path d="M10 110 L105 110 C 125 110, 135 150, 155 150 L 250 150" fill="none" stroke="#2b6cb0" stroke-width="3"/>
+    <path d="M10 220 L105 220 C 125 220, 135 260, 155 260 L 250 260" fill="none" stroke="#2f855a" stroke-width="3"/>
+    <line x1="10" y1="205" x2="105" y2="205" stroke="#4a5568" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="155" y1="175" x2="250" y2="175" stroke="#4a5568" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="10" y="200" font-size="11" fill="#4a5568">E_Fp</text>
+    <text x="215" y="170" font-size="11" fill="#4a5568">E_Fn</text>
+    <rect x="105" y="60" width="50" height="230" fill="#ecc94b" opacity="0.15"/>
+    <text x="60" y="140" font-size="12" fill="#c53030">장벽 q(V_bi − V)</text>
+    <text x="45" y="325" font-size="13" text-anchor="middle" fill="#1f2328">p형</text>
+    <text x="215" y="325" font-size="13" text-anchor="middle" fill="#1f2328">n형</text>
+    <circle cx="190" cy="140" r="5" fill="#1f3d66"/><circle cx="210" cy="140" r="5" fill="#1f3d66"/>
+    <path d="M185 128 Q 140 100 100 105" fill="none" stroke="#1f3d66" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <text x="130" y="350" font-size="12" text-anchor="middle" fill="#444">장벽이 낮아져 확산 전류가 지수적으로 증가</text>
+  </g>
+
+  <!-- (c) 역방향 -->
+  <text x="735" y="30" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2328">(c) 역방향 (n에 +V)</text>
+  <g transform="translate(610,0)">
+    <path d="M10 60 L80 60 C 120 60, 140 175, 180 175 L 250 175" fill="none" stroke="#2b6cb0" stroke-width="3"/>
+    <path d="M10 170 L80 170 C 120 170, 140 285, 180 285 L 250 285" fill="none" stroke="#2f855a" stroke-width="3"/>
+    <line x1="10" y1="155" x2="80" y2="155" stroke="#4a5568" stroke-width="2" stroke-dasharray="6 4"/>
+    <line x1="180" y1="200" x2="250" y2="200" stroke="#4a5568" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="80" y="50" width="100" height="245" fill="#ecc94b" opacity="0.15"/>
+    <text x="130" y="306" font-size="12" text-anchor="middle" fill="#744210">공핍층 넓어짐</text>
+    <text x="24" y="120" font-size="12" fill="#c53030">장벽 q(V_bi + V_R)</text>
+    <text x="45" y="325" font-size="13" text-anchor="middle" fill="#1f2328">p형</text>
+    <text x="215" y="325" font-size="13" text-anchor="middle" fill="#1f2328">n형</text>
+    <text x="130" y="350" font-size="12" text-anchor="middle" fill="#444">소수 캐리어 드리프트만 → 작은 포화 전류</text>
+  </g>
+</svg>

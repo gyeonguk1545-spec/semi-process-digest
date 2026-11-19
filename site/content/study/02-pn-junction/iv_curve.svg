@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="860" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1f2328"/></marker>
+  </defs>
+  <!-- 축: 원점 (520, 230) -->
+  <line x1="60" y1="230" x2="820" y2="230" stroke="#1f2328" stroke-width="1.5" marker-end="url(#ax)"/>
+  <line x1="520" y1="400" x2="520" y2="30" stroke="#1f2328" stroke-width="1.5" marker-end="url(#ax)"/>
+  <text x="810" y="252" font-size="14" fill="#1f2328">V</text>
+  <text x="530" y="40" font-size="14" fill="#1f2328">I</text>
+  <text x="508" y="248" font-size="12" fill="#1f2328">0</text>
+
+  <!-- 순방향: 지수 -->
+  <path d="M520 230 L560 229.5 L580 228.5 L600 226 L615 221 L630 210 L642 192 L652 168 L660 140 L667 105 L673 65" fill="none" stroke="#2b6cb0" stroke-width="3.5"/>
+  <line x1="640" y1="236" x2="640" y2="224" stroke="#1f2328"/>
+  <text x="640" y="254" font-size="12" text-anchor="middle" fill="#1f2328">약 0.6–0.7 V (Si)</text>
+  <text x="690" y="110" font-size="13" fill="#2b6cb0">순방향: I ≈ I_s·exp(qV/kT)</text>
+  <text x="690" y="128" font-size="12" fill="#444">60 mV 마다 약 10배 (300 K)</text>
+
+  <!-- 역방향: 포화 + 항복 -->
+  <path d="M520 230 L500 236 L470 238 L250 239 L215 240 L205 246 L199 270 L195 320 L192 390" fill="none" stroke="#2b6cb0" stroke-width="3.5"/>
+  <text x="360" y="262" font-size="13" text-anchor="middle" fill="#2b6cb0">역방향 포화 전류 −I_s (매우 작음, 그림은 과장)</text>
+  <line x1="205" y1="224" x2="205" y2="236" stroke="#1f2328"/>
+  <text x="205" y="218" font-size="12" text-anchor="middle" fill="#1f2328">−V_BR</text>
+  <text x="70" y="320" font-size="13" fill="#c53030">항복 영역</text>
+  <text x="70" y="338" font-size="12" fill="#444">전압은 거의 그대로,</text>
+  <text x="70" y="354" font-size="12" fill="#444">전류가 급격히 증가</text>
+
+  <!-- 영역 표시 -->
+  <rect x="540" y="40" width="270" height="10" fill="none"/>
+  <text x="300" y="60" font-size="13" fill="#1f2328">역방향 바이어스 (V &lt; 0)</text>
+  <text x="560" y="300" font-size="13" fill="#1f2328">순방향 바이어스 (V &gt; 0)</text>
+  <text x="560" y="318" font-size="12" fill="#444">문턱 부근 이후 전류가 급증</text>
+</svg>
