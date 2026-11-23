@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="860" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <radialGradient id="pl" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#c9a6f0"/><stop offset="1" stop-color="#efe5fb"/></radialGradient>
+  </defs>
+  <!-- 1. 챔버 -->
+  <text x="140" y="34" font-size="17" font-weight="700" fill="#1f2328" text-anchor="middle">① 챔버 규모</text>
+  <rect x="40" y="56" width="200" height="190" rx="6" fill="#f4f6f8" stroke="#8a8f98" stroke-width="2"/>
+  <g fill="#c9a227"><circle cx="75" cy="50" r="7"/><circle cx="115" cy="50" r="7"/><circle cx="165" cy="50" r="7"/><circle cx="205" cy="50" r="7"/></g>
+  <text x="140" y="74" font-size="11" fill="#8a6d12" text-anchor="middle">(배경) ICP 코일</text>
+  <ellipse cx="140" cy="140" rx="85" ry="50" fill="url(#pl)"/>
+  <text x="140" y="145" font-size="14" fill="#4b2a74" text-anchor="middle">플라즈마</text>
+  <rect x="60" y="208" width="160" height="10" fill="#6b7280"/>
+  <rect x="80" y="218" width="120" height="22" fill="#9aa4b1"/>
+  <text x="140" y="203" font-size="11" fill="#4b2a74" text-anchor="middle">시스(sheath)</text>
+  <text x="140" y="270" font-size="13" fill="#333" text-anchor="middle">PIC + 몬테카를로 충돌</text>
+  <text x="140" y="289" font-size="12" fill="#666" text-anchor="middle">(VSim Plasma)</text>
+
+  <!-- arrow -->
+  <line x1="250" y1="150" x2="320" y2="150" stroke="#444" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- 2. 전달값 -->
+  <text x="430" y="34" font-size="17" font-weight="700" fill="#1f2328" text-anchor="middle">② 넘겨주는 값</text>
+  <rect x="330" y="60" width="200" height="180" rx="8" fill="#fff4e5" stroke="#d48a1f"/>
+  <text x="430" y="90" font-size="13" fill="#333" text-anchor="middle">이온 에너지 분포</text>
+  <text x="430" y="112" font-size="13" fill="#333" text-anchor="middle">이온 입사각 분포</text>
+  <text x="430" y="134" font-size="13" fill="#333" text-anchor="middle">전자 에너지 분포(EEPF)</text>
+  <!-- small IEDF sketch -->
+  <polyline points="355,215 375,214 390,180 400,212 430,212 445,170 458,214 505,215" fill="none" stroke="#d48a1f" stroke-width="2"/>
+  <line x1="350" y1="216" x2="510" y2="216" stroke="#888"/>
+  <text x="430" y="232" font-size="11" fill="#8a5a12" text-anchor="middle">(배경) RF 바이어스에서 흔한 두 봉우리 모양</text>
+
+  <line x1="540" y1="150" x2="610" y2="150" stroke="#444" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- 3. 피처 -->
+  <text x="720" y="34" font-size="17" font-weight="700" fill="#1f2328" text-anchor="middle">③ 패턴(피처) 규모</text>
+  <rect x="620" y="60" width="200" height="180" fill="#ffffff" stroke="#8a8f98"/>
+  <rect x="620" y="60" width="60" height="30" fill="#e06666"/><rect x="760" y="60" width="60" height="30" fill="#e06666"/>
+  <rect x="620" y="90" width="200" height="150" fill="#d7dde5"/>
+  <path d="M680,90 L686,150 L700,200 Q720,214 740,200 L754,150 L760,90 Z" fill="#ffffff"/>
+  <path d="M680,90 L683,130 L691,165 Q720,175 749,165 L757,130 L760,90 Z" fill="none" stroke="#4a7fc1" stroke-dasharray="4 3"/>
+  <text x="720" y="232" font-size="11" fill="#333" text-anchor="middle">식각 프로파일 진행</text>
+  <text x="720" y="270" font-size="13" fill="#333" text-anchor="middle">피처 규모 식각 모델</text>
+  <text x="720" y="289" font-size="12" fill="#666" text-anchor="middle">(Victory Process)</text>
+
+  <!-- feedback -->
+  <path d="M720,300 Q720,350 430,350 Q140,350 140,300" fill="none" stroke="#2b8a6e" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ar)"/>
+  <text x="430" y="342" font-size="13" fill="#2b8a6e" text-anchor="middle">챔버 조건·파형 설계 ↔ 프로파일·공정 산포를 연결</text>
+  <text x="430" y="392" font-size="12" fill="#666" text-anchor="middle">모델 이름과 전달값은 Silvaco 글(Semiconductor Engineering) 내용. 코일·분포 모양은 일반 배경 지식으로 그린 예시.</text>
+</svg>

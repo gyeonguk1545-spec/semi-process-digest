@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="860" height="440" fill="#ffffff"/>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <marker id="arv" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7b3fb5"/></marker>
+  </defs>
+
+  <!-- (a) 단면 -->
+  <text x="215" y="34" font-size="18" font-weight="700" fill="#1f2328" text-anchor="middle">(a) 펠리클을 씌운 EUV 마스크 단면</text>
+  <!-- membrane -->
+  <path d="M60,120 Q215,108 370,120" fill="none" stroke="#2b8a6e" stroke-width="3"/>
+  <text x="215" y="98" font-size="13" fill="#2b8a6e" text-anchor="middle">펠리클 막 (두께 10~20 nm)</text>
+  <!-- particles -->
+  <circle cx="140" cy="108" r="7" fill="#d9534f"/>
+  <text x="140" y="80" font-size="12" fill="#d9534f" text-anchor="middle">윗면 입자</text>
+  <circle cx="290" cy="128" r="7" fill="#d9534f"/>
+  <text x="290" y="152" font-size="12" fill="#d9534f" text-anchor="middle">아랫면 입자</text>
+  <!-- frame -->
+  <rect x="50" y="120" width="14" height="110" fill="#8a8f98"/>
+  <rect x="366" y="120" width="14" height="110" fill="#8a8f98"/>
+  <text x="38" y="190" font-size="12" fill="#555" text-anchor="end">프레임</text>
+  <!-- mask -->
+  <rect x="40" y="230" width="350" height="16" fill="#c9a227"/>
+  <g fill="#3d3d3d">
+    <rect x="80" y="216" width="30" height="14"/><rect x="140" y="216" width="30" height="14"/>
+    <rect x="200" y="216" width="30" height="14"/><rect x="260" y="216" width="30" height="14"/>
+    <rect x="320" y="216" width="30" height="14"/>
+  </g>
+  <rect x="40" y="246" width="350" height="44" fill="#d7dde5" stroke="#9aa4b1"/>
+  <text x="215" y="273" font-size="13" fill="#333" text-anchor="middle">마스크 기판 (반사형 다층막 + 흡수체 패턴)</text>
+  <!-- EUV light path -->
+  <line x1="120" y1="40" x2="170" y2="214" stroke="#7b3fb5" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arv)"/>
+  <line x1="185" y1="214" x2="240" y2="44" stroke="#7b3fb5" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arv)"/>
+  <text x="215" y="318" font-size="13" fill="#7b3fb5" text-anchor="middle">(배경) 반사형 마스크라 빛이 막을 두 번 지난다</text>
+  <text x="215" y="340" font-size="13" fill="#555" text-anchor="middle">→ 막은 아주 얇아야 하고, 얇아서 쉽게 떨린다</text>
+
+  <!-- (b) 검사 -->
+  <text x="640" y="34" font-size="18" font-weight="700" fill="#1f2328" text-anchor="middle">(b) 검사 장비가 풀어야 할 문제</text>
+  <rect x="470" y="60" width="350" height="88" rx="8" fill="#f3ecfb" stroke="#7b3fb5"/>
+  <text x="645" y="84" font-size="14" font-weight="700" fill="#4b2a74" text-anchor="middle">초고속 가변 초점 (MALS)</text>
+  <text x="645" y="106" font-size="13" fill="#333" text-anchor="middle">마이크로 미러 배열로 초점을 바꾼다</text>
+  <text x="645" y="126" font-size="13" fill="#333" text-anchor="middle">렌즈를 움직이지 않음 → 떨리는 막 추적,</text>
+  <text x="645" y="143" font-size="13" fill="#333" text-anchor="middle">기계 구동에서 나오는 파티클도 줄임</text>
+  <!-- focus lines -->
+  <path d="M520,200 Q645,186 770,200" fill="none" stroke="#2b8a6e" stroke-width="3"/>
+  <path d="M520,206 Q645,224 770,206" fill="none" stroke="#2b8a6e" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="790" y="208" font-size="12" fill="#2b8a6e">진동</text>
+  <line x1="645" y1="150" x2="645" y2="190" stroke="#444" stroke-width="1.5" marker-end="url(#ar)"/>
+  <rect x="470" y="240" width="350" height="70" rx="8" fill="#fff4e5" stroke="#d48a1f"/>
+  <text x="645" y="264" font-size="14" font-weight="700" fill="#8a5a12" text-anchor="middle">찾아야 할 것</text>
+  <text x="645" y="286" font-size="13" fill="#333" text-anchor="middle">약 0.7 µm 미세 입자 · 윗면/아랫면 구분</text>
+  <text x="645" y="303" font-size="13" fill="#333" text-anchor="middle">가장자리·프레임 내벽은 2D·3D 라인 스캐너</text>
+  <text x="430" y="400" font-size="13" fill="#666" text-anchor="middle">수치(10~20 nm, 0.7 µm)와 MALS·라인 스캐너는 디일렉 기사 내용. 반사형 마스크·빛 경로는 일반 배경 지식.</text>
+</svg>

@@ -1,0 +1,5 @@
+{
+ "pellicle.svg": {"source": "직접 작성", "based_on": "https://www.thelec.kr/news/articleView.html?idxno=65730", "license": "직접 작성"},
+ "stacking.svg": {"source": "직접 작성", "based_on": "https://arxiv.org/abs/2611.23806", "license": "직접 작성", "note": "arXiv 논문은 nonexclusive-distrib 1.0 라이선스라 그림을 가져오지 않음"},
+ "plasma_sim.svg": {"source": "직접 작성", "based_on": "https://semiengineering.com/simulation-of-plasma-chambers-for-predictive-simulation-of-semiconductor-manufacturing/", "license": "직접 작성"}
+}
