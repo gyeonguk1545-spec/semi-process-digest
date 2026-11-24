@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<rect width="860" height="420" fill="#ffffff"/>
+<defs><marker id="ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#1f2328"/></marker></defs>
+<text x="20" y="28" font-size="15" font-weight="bold">(a) CMOS 인버터 회로</text>
+<text x="450" y="28" font-size="15" font-weight="bold">(b) 전압 전달 특성 (VTC)</text>
+<g stroke="#1f2328" stroke-width="2" fill="none">
+<line x1="150" y1="60" x2="270" y2="60"/><line x1="210" y1="60" x2="210" y2="105"/>
+<line x1="210" y1="105" x2="230" y2="105"/><line x1="230" y1="100" x2="230" y2="160"/><line x1="230" y1="155" x2="210" y2="155"/><line x1="210" y1="155" x2="210" y2="245"/>
+<line x1="242" y1="100" x2="242" y2="160"/><circle cx="249" cy="130" r="6"/>
+<line x1="210" y1="245" x2="230" y2="245"/><line x1="230" y1="240" x2="230" y2="300"/><line x1="230" y1="295" x2="210" y2="295"/><line x1="210" y1="295" x2="210" y2="345"/>
+<line x1="242" y1="240" x2="242" y2="300"/>
+<line x1="255" y1="130" x2="300" y2="130"/><line x1="242" y1="270" x2="300" y2="270"/><line x1="300" y1="130" x2="300" y2="270"/><line x1="300" y1="200" x2="350" y2="200"/>
+<line x1="210" y1="200" x2="110" y2="200"/>
+<line x1="180" y1="345" x2="240" y2="345"/><line x1="190" y1="353" x2="230" y2="353"/><line x1="200" y1="361" x2="220" y2="361"/>
+</g>
+<circle cx="210" cy="200" r="4" fill="#1f2328"/><circle cx="300" cy="200" r="4" fill="#1f2328"/>
+<text x="210" y="52" font-size="14" text-anchor="middle">V_DD</text>
+<text x="140" y="134" font-size="14" fill="#c0392b">pMOS</text>
+<text x="140" y="276" font-size="14" fill="#2b6cb0">nMOS</text>
+<text x="356" y="205" font-size="14">V_in</text>
+<text x="60" y="205" font-size="14">V_out</text>
+<text x="210" y="384" font-size="13" text-anchor="middle">GND</text>
+<text x="20" y="410" font-size="12" fill="#444">입력 0 → pMOS 켜짐 → 출력 V_DD  /  입력 1 → nMOS 켜짐 → 출력 0</text>
+<line x1="500" y1="360" x2="830" y2="360" stroke="#1f2328" stroke-width="1.5" marker-end="url(#ax)"/>
+<line x1="500" y1="360" x2="500" y2="50" stroke="#1f2328" stroke-width="1.5" marker-end="url(#ax)"/>
+<text x="815" y="345" font-size="13">V_in</text>
+<text x="508" y="60" font-size="13">V_out</text>
+<text x="492" y="84" font-size="12" text-anchor="end">V_DD</text>
+<text x="492" y="364" font-size="12" text-anchor="end">0</text>
+<text x="805" y="378" font-size="12" text-anchor="start">V_DD</text>
+<line x1="500" y1="80" x2="800" y2="80" stroke="#cccccc" stroke-dasharray="4 4"/>
+<line x1="800" y1="80" x2="800" y2="360" stroke="#cccccc" stroke-dasharray="4 4"/>
+<path d="M500 80 L560 80 Q610 82 630 105 Q645 130 650 220 Q655 320 675 340 Q695 358 740 360 L800 360" fill="none" stroke="#2b6cb0" stroke-width="3.5"/>
+<circle cx="650" cy="220" r="5" fill="#c0392b"/>
+<text x="662" y="216" font-size="12" fill="#c0392b">V_M ≈ V_DD/2 (대칭 설계)</text>
+<line x1="560" y1="355" x2="560" y2="365" stroke="#1f2328"/><text x="560" y="378" font-size="12" text-anchor="middle">V_Tn</text>
+<line x1="740" y1="355" x2="740" y2="365" stroke="#1f2328"/><text x="740" y="378" font-size="12" text-anchor="middle">V_DD−|V_Tp|</text>
+<text x="515" y="102" font-size="11" fill="#444">nMOS 꺼짐</text><text x="515" y="116" font-size="11" fill="#444">→ 출력 = V_DD</text>
+<text x="690" y="300" font-size="11" fill="#444">pMOS 꺼짐</text><text x="690" y="314" font-size="11" fill="#444">→ 출력 = 0</text>
+<text x="540" y="200" font-size="11" fill="#444">전이 구간:</text><text x="540" y="214" font-size="11" fill="#444">둘 다 켜짐</text><text x="540" y="228" font-size="11" fill="#444">(관통 전류)</text>
+</svg>

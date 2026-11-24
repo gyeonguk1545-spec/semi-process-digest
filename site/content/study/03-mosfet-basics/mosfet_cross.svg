@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+<rect width="860" height="440" fill="#ffffff"/>
+<defs>
+<marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2b6cb0"/></marker>
+<marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1f2328"/></marker>
+</defs>
+<rect x="60" y="210" width="740" height="180" fill="#f3e3c9" stroke="#b08a52"/>
+<text x="430" y="376" font-size="15" text-anchor="middle" fill="#6b4f22">p형 기판 (바디, Body)</text>
+<rect x="110" y="210" width="190" height="70" rx="22" fill="#bcd5f0" stroke="#2b6cb0"/>
+<rect x="560" y="210" width="190" height="70" rx="22" fill="#bcd5f0" stroke="#2b6cb0"/>
+<rect x="110" y="210" width="190" height="20" fill="#bcd5f0"/>
+<rect x="560" y="210" width="190" height="20" fill="#bcd5f0"/>
+<text x="195" y="258" font-size="15" text-anchor="middle" fill="#1d4f8a">n⁺ 소스</text>
+<text x="665" y="258" font-size="15" text-anchor="middle" fill="#1d4f8a">n⁺ 드레인</text>
+<rect x="300" y="210" width="260" height="44" fill="#e9eef5" stroke="#2b6cb0" stroke-dasharray="5 4"/>
+<rect x="300" y="210" width="260" height="8" fill="#2b6cb0"/>
+<text x="430" y="234" font-size="12" text-anchor="middle" fill="#1d4f8a">반전층 = 채널 (전자)</text>
+<text x="430" y="249" font-size="11" text-anchor="middle" fill="#2b6cb0">그 아래 공핍층</text>
+<rect x="285" y="196" width="290" height="14" fill="#f2df6b" stroke="#b9a640"/>
+<text x="442" y="114" font-size="12" fill="#7a6a14">노란 층: 게이트 절연막 (SiO₂, High-k)</text>
+<rect x="285" y="126" width="290" height="70" fill="#9aa4b1" stroke="#5a6470"/>
+<text x="430" y="167" font-size="15" text-anchor="middle" fill="#1f2328">게이트 (poly-Si → 금속)</text>
+<rect x="160" y="180" width="80" height="30" fill="#6e7781"/>
+<rect x="620" y="180" width="80" height="30" fill="#6e7781"/>
+<line x1="200" y1="180" x2="200" y2="82" stroke="#1f2328" stroke-width="2"/>
+<line x1="430" y1="126" x2="430" y2="82" stroke="#1f2328" stroke-width="2"/>
+<line x1="660" y1="180" x2="660" y2="82" stroke="#1f2328" stroke-width="2"/>
+<text x="200" y="72" font-size="16" font-weight="bold" text-anchor="middle">S (0 V)</text>
+<text x="430" y="72" font-size="16" font-weight="bold" text-anchor="middle">G (V_GS &gt; V_T)</text>
+<text x="660" y="72" font-size="16" font-weight="bold" text-anchor="middle">D (V_DS &gt; 0)</text>
+<line x1="80" y1="390" x2="80" y2="425" stroke="#1f2328" stroke-width="2"/>
+<text x="92" y="424" font-size="14" font-weight="bold">B (보통 0 V)</text>
+<line x1="320" y1="292" x2="540" y2="292" stroke="#2b6cb0" stroke-width="2.5" marker-end="url(#ar)"/>
+<text x="430" y="312" font-size="13" text-anchor="middle" fill="#2b6cb0">전자 흐름 (전류 I_D는 반대 방향, 드레인 → 소스)</text>
+<line x1="300" y1="334" x2="560" y2="334" stroke="#1f2328" stroke-width="1.5" marker-start="url(#ak)" marker-end="url(#ak)"/>
+<text x="430" y="354" font-size="13" text-anchor="middle">채널 길이 L (폭 W는 지면 안쪽 방향)</text>
+<text x="20" y="28" font-size="13" fill="#444">nMOSFET 단면 — 소스·드레인은 기판과 각각 PN 접합을 이루고, 게이트 전압이 그 사이 표면을 n형으로 뒤집어 길을 연다</text>
+</svg>

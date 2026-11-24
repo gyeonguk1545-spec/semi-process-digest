@@ -1,0 +1,11 @@
+{
+ "ivsv_mosfet.png": {
+  "title": "File:IvsV mosfet.svg",
+  "artist": "CyrilB (Wikimedia Commons)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:IvsV_mosfet.svg",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/IvsV_mosfet.svg",
+  "desc": "Drain current vs. drain-source voltage for several V_GS - V_TH (square-law model). Used unmodified as a 960 px PNG rendering from Commons."
+ }
+}
