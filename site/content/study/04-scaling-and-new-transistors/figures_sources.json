@@ -1,0 +1,29 @@
+{
+ "moores_law.png": {
+  "title": "File:Moore's Law Transistor Count 1970-2020.png",
+  "artist": "Max Roser, Hannah Ritchie (Our World in Data)",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Moore%27s_Law_Transistor_Count_1970-2020.png",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Moore%27s_Law_Transistor_Count_1970-2020.png",
+  "desc": "Transistor count per microprocessor 1970-2020 (log scale). Used unmodified as a 960 px thumbnail from Commons."
+ },
+ "finfet_doublegate.png": {
+  "title": "File:Doublegate FinFET-en.svg",
+  "artist": "Irene Ringworm (original PNG), vectorized by Д.Ильин (Wikimedia Commons)",
+  "license": "Public domain",
+  "license_url": "https://commons.wikimedia.org/wiki/File:Doublegate_FinFET-en.svg",
+  "page": "https://commons.wikimedia.org/wiki/File:Doublegate_FinFET-en.svg",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/79/Doublegate_FinFET-en.svg",
+  "desc": "Double-gate FinFET schematic. Used unmodified as a 960 px PNG rendering from Commons."
+ },
+ "gaa_process.png": {
+  "title": "File:Simplified Fabrication Process Flow of a Nanosheet Gate-All-Around Transistor.png",
+  "artist": "Adarsh1204 (Wikimedia Commons)",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Simplified_Fabrication_Process_Flow_of_a_Nanosheet_Gate-All-Around_Transistor.png",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/81/Simplified_Fabrication_Process_Flow_of_a_Nanosheet_Gate-All-Around_Transistor.png",
+  "desc": "Simplified nanosheet GAA process flow. Used unmodified as a 960 px thumbnail from Commons."
+ }
+}

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" font-family="Malgun Gothic, Apple SD Gothic Neo, Noto Sans KR, sans-serif">
+  <rect width="880" height="420" fill="#ffffff"/>
+  <text x="440" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#222">트랜지스터 구조의 변천 — 전류 방향으로 바라본 게이트 단면</text>
+  <!-- panel 1 planar -->
+  <g transform="translate(20,60)">
+    <text x="100" y="0" text-anchor="middle" font-size="15" font-weight="bold">평면 (Planar)</text>
+    <rect x="10" y="190" width="180" height="90" fill="#d9e6f2" stroke="#5b7fa6"/>
+    <rect x="30" y="182" width="140" height="10" fill="#f4d03f" stroke="#b7950b"/>
+    <rect x="30" y="150" width="140" height="32" fill="#e74c3c" opacity="0.85" stroke="#922b21"/>
+    <rect x="30" y="192" width="140" height="8" fill="#1f4e8c" opacity="0.6"/>
+    <text x="100" y="171" text-anchor="middle" font-size="13" fill="#fff">게이트</text>
+    <text x="100" y="250" text-anchor="middle" font-size="13" fill="#333">Si 기판</text>
+    <text x="100" y="310" text-anchor="middle" font-size="13">게이트가 채널 <tspan font-weight="bold">위 1면</tspan></text>
+    <text x="100" y="330" text-anchor="middle" font-size="12" fill="#555">~28 nm 세대까지</text>
+  </g>
+  <!-- panel 2 finfet -->
+  <g transform="translate(235,60)">
+    <text x="100" y="0" text-anchor="middle" font-size="15" font-weight="bold">FinFET</text>
+    <rect x="10" y="230" width="180" height="50" fill="#d9e6f2" stroke="#5b7fa6"/>
+    <rect x="10" y="215" width="180" height="15" fill="#cccccc" stroke="#888"/>
+    <path d="M30,215 L30,70 L170,70 L170,215 L122,215 L122,92 L78,92 L78,215 Z" fill="#e74c3c" opacity="0.85" stroke="#922b21"/>
+    <rect x="80" y="94" width="40" height="121" fill="#f4d03f" stroke="#b7950b"/>
+    <rect x="86" y="100" width="28" height="115" fill="#9cc3e6" stroke="#1f4e8c"/>
+    <text x="100" y="84" text-anchor="middle" font-size="12" fill="#fff">게이트</text>
+    <text x="100" y="160" text-anchor="middle" font-size="11" fill="#1f4e8c" transform="rotate(-90 100 160)">Si 핀</text>
+    <text x="100" y="262" text-anchor="middle" font-size="12" fill="#333">기판 · STI 산화막</text>
+    <text x="100" y="310" text-anchor="middle" font-size="13">핀을 <tspan font-weight="bold">3면</tspan>에서 감쌈</text>
+    <text x="100" y="330" text-anchor="middle" font-size="12" fill="#555">22 nm 무렵 도입</text>
+  </g>
+  <!-- panel 3 GAA nanosheet -->
+  <g transform="translate(450,60)">
+    <text x="100" y="0" text-anchor="middle" font-size="15" font-weight="bold">GAA 나노시트</text>
+    <rect x="10" y="230" width="180" height="50" fill="#d9e6f2" stroke="#5b7fa6"/>
+    <rect x="10" y="215" width="180" height="15" fill="#cccccc" stroke="#888"/>
+    <rect x="25" y="60" width="150" height="155" fill="#e74c3c" opacity="0.85" stroke="#922b21"/>
+    <g fill="#9cc3e6" stroke="#1f4e8c">
+      <rect x="45" y="80" width="110" height="22" rx="3"/>
+      <rect x="45" y="125" width="110" height="22" rx="3"/>
+      <rect x="45" y="170" width="110" height="22" rx="3"/>
+    </g>
+    <g fill="none" stroke="#f4d03f" stroke-width="3">
+      <rect x="42" y="77" width="116" height="28" rx="4"/>
+      <rect x="42" y="122" width="116" height="28" rx="4"/>
+      <rect x="42" y="167" width="116" height="28" rx="4"/>
+    </g>
+    <text x="100" y="72" text-anchor="middle" font-size="12" fill="#fff">게이트</text>
+    <text x="100" y="140" text-anchor="middle" font-size="11" fill="#1f4e8c">Si 나노시트</text>
+    <text x="100" y="310" text-anchor="middle" font-size="13">시트마다 <tspan font-weight="bold">4면</tspan> 감쌈</text>
+    <text x="100" y="330" text-anchor="middle" font-size="12" fill="#555">3 nm·2 nm급부터</text>
+  </g>
+  <!-- panel 4 CFET -->
+  <g transform="translate(665,60)">
+    <text x="100" y="0" text-anchor="middle" font-size="15" font-weight="bold">CFET (연구 단계)</text>
+    <rect x="10" y="230" width="180" height="50" fill="#d9e6f2" stroke="#5b7fa6"/>
+    <rect x="10" y="215" width="180" height="15" fill="#cccccc" stroke="#888"/>
+    <rect x="25" y="40" width="150" height="175" fill="#e74c3c" opacity="0.85" stroke="#922b21"/>
+    <g fill="#f5b7b1" stroke="#922b21">
+      <rect x="45" y="55" width="110" height="18" rx="3"/>
+      <rect x="45" y="88" width="110" height="18" rx="3"/>
+    </g>
+    <line x1="30" y1="125" x2="170" y2="125" stroke="#555" stroke-dasharray="4,3"/>
+    <g fill="#9cc3e6" stroke="#1f4e8c">
+      <rect x="45" y="145" width="110" height="18" rx="3"/>
+      <rect x="45" y="178" width="110" height="18" rx="3"/>
+    </g>
+    <text x="100" y="118" text-anchor="middle" font-size="12" fill="#fff">pFET 시트</text>
+    <text x="100" y="140" text-anchor="middle" font-size="12" fill="#fff">nFET 시트</text>
+    <text x="100" y="310" text-anchor="middle" font-size="13">n·p를 <tspan font-weight="bold">위아래로 적층</tspan></text>
+    <text x="100" y="330" text-anchor="middle" font-size="12" fill="#555">셀 면적 축소 목표</text>
+  </g>
+  <!-- legend -->
+  <g transform="translate(170,395)" font-size="13" fill="#333">
+    <rect x="0" y="-12" width="16" height="14" fill="#e74c3c" opacity="0.85"/><text x="22" y="0">금속 게이트</text>
+    <rect x="130" y="-12" width="16" height="14" fill="#f4d03f"/><text x="152" y="0">게이트 절연막(High-k)</text>
+    <rect x="330" y="-12" width="16" height="14" fill="#9cc3e6" stroke="#1f4e8c"/><text x="352" y="0">채널(Si)</text>
+    <rect x="440" y="-12" width="16" height="14" fill="#cccccc"/><text x="462" y="0">분리 산화막</text>
+  </g>
+</svg>
